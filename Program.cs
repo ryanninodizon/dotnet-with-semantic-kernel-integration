@@ -13,7 +13,6 @@ builder.Services.AddKernel();
 builder.Services.AddOpenAIChatCompletion("gpt-3.5-turbo-0125",builder.Configuration["AI:OpenAI:ApiKey"]);
 
 var app = builder.Build();
-
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {
